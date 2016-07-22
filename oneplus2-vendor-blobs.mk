@@ -205,6 +205,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/framework/ConnectivityExt.jar:/system/framework/ConnectivityExt.jar \
         vendor/oneplus/oneplus2/proprietary/framework/cneapiclient.jar:/system/framework/cneapiclient.jar \
         vendor/oneplus/oneplus2/proprietary/framework/com.quicinc.cne.jar:/system/framework/com.quicinc.cne.jar \
+        vendor/oneplus/oneplus2/proprietary/framework/org.codeaurora.camera.jar:/system/framework/org.codeaurora.camera.jar \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libNimsWrap.so:/system/vendor/lib/libNimsWrap.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libcne.so:/system/vendor/lib/libcne.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libcneapiclient.so:/system/vendor/lib/libcneapiclient.so \

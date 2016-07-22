@@ -49,5 +49,18 @@ PRODUCT_PACKAGES += \
     libqmi_cci \
     libqmi_client_qmux \
     libqmiservices
+    
+# OxygenOS 3 Camera
+PRODUCT_PACKAGES += \
+    libfilter-sdk \
+    libopbaselib \
+    libopcameralib \
+    libopcamera \
+    lib-imscamera \
+    libimscamera_jni \
+    libimsmedia_jni \
+    secure_camera_sample_client \
+    OnePlusCamera \
+    OnePlusCameraService
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)

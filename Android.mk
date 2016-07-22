@@ -1,4 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright 2016 halogenOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,6 +18,9 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),oneplus2)
+
+# Call the OnePlus Camera makefile (We want merges to be easy AF)
+include vendor/oneplus/oneplus2/OxygenOSCamera.mk
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
@@ -302,6 +306,7 @@ LOCAL_MODULE_PATH_32 := $(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 LOCAL_MULTILIB := both
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
+
 
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib/egl && pushd $(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib64/egl && pushd $(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
