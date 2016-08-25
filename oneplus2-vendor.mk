@@ -60,7 +60,6 @@ PRODUCT_PACKAGES += \
     libimscamera_jni \
     libimsmedia_jni \
     secure_camera_sample_client \
-    OnePlusCamera \
-    OnePlusCameraService
+    OnePlusCamera
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
