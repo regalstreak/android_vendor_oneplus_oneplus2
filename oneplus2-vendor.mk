@@ -444,9 +444,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     shutdownlistener \
     TimeService \
-    CNEService \
     qcrilmsgtunnel \
-    com.qti.dpmframework \
-    dpmapi \
     qcnvitems \
     qcrilhook
